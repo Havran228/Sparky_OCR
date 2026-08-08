@@ -216,3 +216,18 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Sparky OCR runtime data (keep directory placeholders)
+uploads/*
+!uploads/.gitkeep
+converted/*
+!converted/.gitkeep
+!converted/markdown/
+!converted/docx/
+converted/markdown/*
+converted/docx/*
+!converted/markdown/.gitkeep
+!converted/docx/.gitkeep
+models_cache/
+*.pdf
+!tests/fixtures/**/*.pdf
