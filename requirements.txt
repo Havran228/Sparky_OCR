@@ -1,0 +1,22 @@
+# Sparky OCR — Python dependencies
+#
+# IMPORTANT: Do NOT install/upgrade torch, torchvision, or torchaudio here.
+# The nvcr.io/nvidia/pytorch base image already ships an ARM64/CUDA-optimized
+# PyTorch build for Grace Blackwell. Docling must inherit that system PyTorch.
+
+# Web UI
+streamlit>=1.37.0,<2.0.0
+
+# Core PDF / document engines
+# Docling pulls layout + OCR models; uses the preinstalled torch.
+docling>=2.15.0
+pdfplumber>=0.11.0
+
+# Output writers
+python-docx>=1.1.2
+markdown>=3.6
+
+# Utilities already commonly present, pinned for clarity
+pydantic>=2.7.0
+python-dateutil>=2.9.0
+tzdata>=2024.1
